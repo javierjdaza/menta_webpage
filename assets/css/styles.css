@@ -421,6 +421,34 @@ body[data-theme="blue"] .theme-switch__dot { background: var(--blue); }
 }
 
 /* Accesibilidad: respetar reduce-motion */
+/* ===== Ajustes mobile ===== */
+@media (max-width: 600px) {
+  body { font-size: 15.5px; }
+
+  /* Hero */
+  .hero { min-height: 66vh; }
+  .hero__title { font-size: 1.3rem; line-height: 1.32; }
+  .hero__content { gap: 20px; }
+
+  /* Botón del hero "Agenda sin costo tu valoración" más pequeño y encuadrado */
+  .btn { font-size: .84rem; padding: 11px 18px; }
+  .btn--lg { font-size: .88rem; padding: 12px 18px; gap: 8px; line-height: 1.25; }
+  .hero__content .btn--lg { max-width: 88%; }
+  .ico-wpp { width: 17px; height: 17px; }
+
+  /* Títulos y textos más chicos */
+  .nav a { font-size: 1rem; }
+  .section__title { font-size: 1.45rem; }
+  .svc-hero h1 { font-size: 2rem; }
+  .svc-hero p { font-size: 1rem; }
+  .svc__title { font-size: 1.25rem; }
+  .svc__desc, .narrow p, .section p { font-size: .96rem; }
+  .purpose__card p { font-size: .98rem; }
+  .quote blockquote { font-size: 1.02rem; }
+  .member__info strong { font-size: 1rem; }
+  .feature__title { font-size: 1.05rem; }
+}
+
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   .bubble { animation: none; display: none; }
