@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Servicios · Clínica Menta</title>
+  <meta name="description" content="Especialidades odontológicas de Clínica Menta en Medellín: odontología general y estética, ortodoncia, periodoncia, endodoncia, odontopediatría y rehabilitación oral." />
+  <meta name="theme-color" content="#ffffff" />
+
+  <link rel="icon" type="image/png" href="assets/img/favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/styles.css?v=4" />
+</head>
+<body data-theme="light">
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <button id="theme-switch" class="theme-switch" type="button" aria-label="Cambiar color del header">
+    <span class="theme-switch__dot"></span>
+    <span class="theme-switch__label">Header: <strong id="theme-name">Blanco</strong></span>
+    <span class="theme-switch__hint">tocar para iterar</span>
+  </button>
+
+  <!-- ===== Header ===== -->
+  <header class="header">
+    <div class="container header__bar">
+      <a class="header__logo" href="index.html#inicio" aria-label="Clínica Menta, inicio">
+        <img src="assets/img/logo-menta.webp" alt="Clínica Menta" width="160" height="66" />
+      </a>
+      <nav class="nav" id="nav" aria-label="Navegación principal">
+        <a href="index.html#inicio">Inicio</a>
+        <a href="profesionales.html">Profesionales</a>
+        <a href="servicios.html" aria-current="page">Servicios</a>
+        <a href="index.html#pacientes">Nuestros pacientes</a>
+        <a href="index.html#contacto">Contacto</a>
+      </nav>
+      <a class="btn btn--cta header__cta" href="https://wa.link/eql0i4" target="_blank" rel="noopener">Agenda tu valoración</a>
+      <button class="nav-toggle" id="nav-toggle" type="button" aria-expanded="false" aria-controls="nav" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <!-- ===== Encabezado de la vista ===== -->
+    <section class="svc-hero">
+      <div class="svc-hero__bg" aria-hidden="true"><span></span><span></span><span></span></div>
+      <div class="container svc-hero__content">
+        <span class="kicker">Especialidades</span>
+        <h1>Servicios</h1>
+        <p>Combinamos prevención, salud oral y tratamientos estéticos para acompañar cada etapa de tu sonrisa, con un equipo de profesionales dedicados a tu bienestar.</p>
+      </div>
+    </section>
+
+    <div class="container svc-list">
+
+      <!-- 1. Odontología general y estética -->
+      <article class="svc reveal">
+        <div class="svc__info">
+          <span class="svc__num">01</span>
+          <h2 class="svc__title">Odontología general y estética</h2>
+          <p class="svc__desc">Es la base del cuidado odontológico: diagnóstico, profilaxis, control de caries y restauraciones que preservan la función y la salud de cada pieza dental.</p>
+          <p class="svc__desc">Cuando el objetivo es estético, realizamos blanqueamiento, diseño de sonrisa y restauraciones en resina o cerámica, buscando un resultado natural y proporcionado a tus rasgos.</p>
+        </div>
+        <div class="svc__team">
+          <figure class="doctor">
+            <div class="doctor__photo"><img src="assets/img/doctores/david-giraldo.webp" alt="Doctor David Giraldo" loading="lazy" width="500" height="500" /></div>
+            <figcaption><strong>Dr. David Giraldo</strong><span>Odontólogo estético</span></figcaption>
+          </figure>
+          <figure class="doctor">
+            <div class="doctor__photo"><img src="assets/img/doctores/maria-paulina.webp" alt="Doctora María Paulina" loading="lazy" width="500" height="500" /></div>
+            <figcaption><strong>Dra. María Paulina</strong><span>Odontóloga estética</span></figcaption>
+          </figure>
+        </div>
+      </article>
+
+      <!-- 2. Ortodoncia -->
+      <article class="svc svc--rev reveal">
+        <div class="svc__info">
+          <span class="svc__num">02</span>
+          <h2 class="svc__title">Ortodoncia</h2>
+          <p class="svc__desc">Tratamos las maloclusiones y el apiñamiento dental mediante ortodoncia fija (brackets) o alineadores transparentes, según el diagnóstico de cada caso.</p>
+          <p class="svc__desc">El objetivo va más allá de la estética: una correcta alineación y oclusión mejora la masticación, la fonación y la higiene a largo plazo. Hacemos seguimiento en cada control hasta finalizar el tratamiento.</p>
+        </div>
+        <div class="svc__team">
+          <figure class="doctor">
+            <div class="doctor__photo"><img src="assets/img/doctores/jorge-fernandez.webp" alt="Doctor Jorge Fernández" loading="lazy" width="500" height="500" /></div>
+            <figcaption><strong>Dr. Jorge Fernández</strong><span>Ortodoncista</span></figcaption>
+          </figure>
+          <figure class="doctor">
+            <div class="doctor__photo"><img src="assets/img/doctores/claudia-carvajal.webp" alt="Doctora Claudia Carvajal" loading="lazy" width="500" height="500" /></div>
+            <figcaption><strong>Dra. Claudia Carvajal</strong><span>Ortodoncista</span></figcaption>
+          </figure>
+        </div>
+      </article>
+
+      <!-- 3. Periodoncia -->
+      <article class="svc reveal">
+        <div class="svc__info">
+          <span class="svc__num">03</span>
+          <h2 class="svc__title">Periodoncia</h2>
+          <p class="svc__desc">Nos enfocamos en la salud del periodonto (encías, ligamento y hueso de soporte), tejidos esenciales para la estabilidad de los dientes.</p>
+          <p class="svc__desc">Diagnosticamos y tratamos la gingivitis y la enfermedad periodontal mediante profilaxis, raspado y alisado radicular, además de terapias de mantenimiento. El sangrado, la halitosis o la movilidad dental son señales que conviene evaluar a tiempo.</p>
+        </div>
+        <div class="svc__team svc__team--solo">
+          <figure class="doctor">
+            <div class="doctor__photo"><img src="assets/img/doctores/valeria-montoya.webp" alt="Doctora Valeria Montoya" loading="lazy" width="500" height="500" /></div>
+            <figcaption><strong>Dra. Valeria Montoya</strong><span>Periodoncista</span></figcaption>
+          </figure>
+        </div>
+      </article>
+
+      <!-- 4. Endodoncia -->
+      <article class="svc svc--rev reveal">
+        <div class="svc__info">
+          <span class="svc__num">04</span>
+          <h2 class="svc__title">Endodoncia</h2>
+          <p class="svc__desc">La terapia endodóntica (tratamiento de conducto) permite conservar dientes comprometidos por caries profunda, infección o traumatismo, evitando la extracción.</p>
+          <p class="svc__desc">Eliminamos el tejido pulpar afectado, desinfectamos y sellamos los conductos bajo anestesia local, controlando el dolor durante todo el procedimiento para una recuperación predecible.</p>
+        </div>
+        <div class="svc__team svc__team--solo">
+          <figure class="doctor">
+            <div class="doctor__photo"><img src="assets/img/doctores/marcela-quintero.webp" alt="Doctora Marcela Quintero" loading="lazy" width="500" height="500" /></div>
+            <figcaption><strong>Dra. Marcela Quintero</strong><span>Endodoncista</span></figcaption>
+          </figure>
+        </div>
+      </article>
+
+      <!-- 5. Odontopediatría -->
+      <article class="svc reveal">
+        <div class="svc__info">
+          <span class="svc__num">05</span>
+          <h2 class="svc__title">Odontopediatría</h2>
+          <p class="svc__desc">Atención odontológica especializada para bebés, niños y adolescentes, con un enfoque preventivo adaptado a cada etapa del desarrollo.</p>
+          <p class="svc__desc">Realizamos controles, aplicación de flúor, sellantes y manejo de la conducta para favorecer una experiencia positiva. El objetivo es prevenir la caries temprana y consolidar hábitos de higiene que perduren.</p>
+        </div>
+        <div class="svc__team svc__team--solo">
+          <figure class="doctor">
+            <div class="doctor__photo"><img src="assets/img/doctores/katherine-ramirez.webp" alt="Doctora Katherine Ramírez" loading="lazy" width="500" height="500" /></div>
+            <figcaption><strong>Dra. Katherine Ramírez</strong><span>Odontopediatra</span></figcaption>
+          </figure>
+        </div>
+      </article>
+
+      <!-- 6. Rehabilitación oral -->
+      <article class="svc svc--rev svc--full reveal">
+        <div class="svc__info">
+          <span class="svc__num">06</span>
+          <h2 class="svc__title">Rehabilitación oral</h2>
+          <p class="svc__desc">Restauramos la función, la oclusión y la estética en casos de pérdida dental o desgaste avanzado, mediante un plan de tratamiento integral.</p>
+          <p class="svc__desc">Combinamos coronas, puentes, prótesis e implantes para devolver la capacidad de masticar y hablar con comodidad, junto con la armonía de la sonrisa.</p>
+        </div>
+      </article>
+    </div>
+
+    <!-- ===== CTA final ===== -->
+    <section class="section section--dark svc-final">
+      <div class="container svc-final__inner reveal">
+        <h2 class="section__title section__title--light">¿Listo para cuidar tu sonrisa?</h2>
+        <p>Agenda sin costo tu valoración inicial y te orientamos sobre el tratamiento ideal para ti.</p>
+        <a class="btn btn--cta btn--lg" href="https://wa.link/eql0i4" target="_blank" rel="noopener">
+          <svg class="ico-wpp" viewBox="0 0 32 32" width="22" height="22" aria-hidden="true" fill="currentColor"><path d="M16.004 2.667c-7.36 0-13.337 5.977-13.337 13.337 0 2.352.616 4.652 1.785 6.677L2.667 29.333l6.83-1.79a13.27 13.27 0 0 0 6.507 1.658h.005c7.36 0 13.337-5.977 13.337-13.337 0-3.563-1.388-6.913-3.908-9.434a13.25 13.25 0 0 0-9.434-3.763zm0 24.448h-.004a11.07 11.07 0 0 1-5.638-1.544l-.404-.24-4.053 1.063 1.082-3.95-.263-.42a11.03 11.03 0 0 1-1.69-5.886c0-6.117 4.978-11.094 11.099-11.094a11.02 11.02 0 0 1 7.842 3.252 11.02 11.02 0 0 1 3.249 7.846c0 6.118-4.978 11.094-11.097 11.094zm6.085-8.31c-.333-.167-1.973-.974-2.279-1.085-.305-.111-.528-.167-.75.167-.222.333-.861 1.085-1.056 1.307-.194.222-.389.25-.722.083-.333-.167-1.408-.519-2.682-1.655-.991-.884-1.66-1.976-1.855-2.309-.194-.333-.021-.513.146-.679.15-.149.333-.389.5-.583.166-.195.222-.334.333-.556.111-.222.056-.417-.028-.583-.083-.167-.75-1.808-1.027-2.475-.27-.649-.545-.561-.75-.572l-.639-.011c-.222 0-.583.083-.889.417-.305.333-1.166 1.139-1.166 2.78 0 1.64 1.194 3.224 1.36 3.446.167.222 2.35 3.587 5.692 5.03.795.344 1.416.549 1.9.703.798.254 1.524.218 2.099.132.64-.096 1.973-.806 2.251-1.585.278-.78.278-1.448.194-1.587-.083-.139-.305-.222-.638-.389z"/></svg>
+          Agenda sin costo tu valoración
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <img src="assets/img/logo-icono.webp" alt="Clínica Menta" width="48" height="57" />
+        <p>Clínica odontológica en Medellín especializada en tratamientos integrales de salud oral y estética dental.</p>
+      </div>
+      <div class="footer__col">
+        <h4>Contacto</h4>
+        <p>WhatsApp <a href="https://wa.me/573128729515" target="_blank" rel="noopener">+57 312 8729515</a></p>
+        <p>Torre médica CC Los Molinos, piso 15, consultorio 1501.</p>
+        <p>Medellín, Antioquia</p>
+        <p><a href="mailto:gerente.menta@gmail.com">gerente.menta@gmail.com</a></p>
+      </div>
+      <div class="footer__col">
+        <h4>Horarios</h4>
+        <p>Lunes a viernes · 8:00 a. m. – 6:00 p. m.</p>
+        <p>Sábados · 8:00 a. m. – 12:30 p. m.</p>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container">© <span id="year"></span> Clínica Menta · Medellín, Colombia</div>
+    </div>
+  </footer>
+
+  <a class="wpp-float" href="https://wa.me/573128729515" target="_blank" rel="noopener" aria-label="Escríbenos por WhatsApp">
+    <svg viewBox="0 0 32 32" width="30" height="30" aria-hidden="true" fill="currentColor"><path d="M16.004 2.667c-7.36 0-13.337 5.977-13.337 13.337 0 2.352.616 4.652 1.785 6.677L2.667 29.333l6.83-1.79a13.27 13.27 0 0 0 6.507 1.658h.005c7.36 0 13.337-5.977 13.337-13.337 0-3.563-1.388-6.913-3.908-9.434a13.25 13.25 0 0 0-9.434-3.763zm0 24.448h-.004a11.07 11.07 0 0 1-5.638-1.544l-.404-.24-4.053 1.063 1.082-3.95-.263-.42a11.03 11.03 0 0 1-1.69-5.886c0-6.117 4.978-11.094 11.099-11.094a11.02 11.02 0 0 1 7.842 3.252 11.02 11.02 0 0 1 3.249 7.846c0 6.118-4.978 11.094-11.097 11.094zm6.085-8.31c-.333-.167-1.973-.974-2.279-1.085-.305-.111-.528-.167-.75.167-.222.333-.861 1.085-1.056 1.307-.194.222-.389.25-.722.083-.333-.167-1.408-.519-2.682-1.655-.991-.884-1.66-1.976-1.855-2.309-.194-.333-.021-.513.146-.679.15-.149.333-.389.5-.583.166-.195.222-.334.333-.556.111-.222.056-.417-.028-.583-.083-.167-.75-1.808-1.027-2.475-.27-.649-.545-.561-.75-.572l-.639-.011c-.222 0-.583.083-.889.417-.305.333-1.166 1.139-1.166 2.78 0 1.64 1.194 3.224 1.36 3.446.167.222 2.35 3.587 5.692 5.03.795.344 1.416.549 1.9.703.798.254 1.524.218 2.099.132.64-.096 1.973-.806 2.251-1.585.278-.78.278-1.448.194-1.587-.083-.139-.305-.222-.638-.389z"/></svg>
+  </a>
+
+  <script src="assets/js/main.js?v=4" defer></script>
+</body>
+</html>

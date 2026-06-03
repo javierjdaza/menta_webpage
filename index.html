@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Clínica Menta · Odontología integral en Medellín</title>
+  <meta name="description" content="Clínica odontológica en Medellín especializada en tratamientos integrales de salud oral y estética dental. Agenda sin costo tu valoración." />
+  <meta name="theme-color" content="#ffffff" />
+
+  <link rel="icon" type="image/png" href="assets/img/favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/styles.css?v=4" />
+</head>
+<body data-theme="light">
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <!-- ===== Switcher de tema (fase de exploración) ===== -->
+  <button id="theme-switch" class="theme-switch" type="button" aria-label="Cambiar color del header">
+    <span class="theme-switch__dot"></span>
+    <span class="theme-switch__label">Header: <strong id="theme-name">Blanco</strong></span>
+    <span class="theme-switch__hint">tocar para iterar</span>
+  </button>
+
+  <!-- ===== Header ===== -->
+  <header class="header" id="inicio">
+    <div class="container header__bar">
+      <a class="header__logo" href="index.html#inicio" aria-label="Clínica Menta, inicio">
+        <img src="assets/img/logo-menta.webp" alt="Clínica Menta" width="160" height="66" />
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Navegación principal">
+        <a href="index.html#inicio">Inicio</a>
+        <a href="profesionales.html">Profesionales</a>
+        <a href="servicios.html">Servicios</a>
+        <a href="index.html#pacientes">Nuestros pacientes</a>
+        <a href="index.html#contacto">Contacto</a>
+      </nav>
+
+      <a class="btn btn--cta header__cta" href="https://wa.link/eql0i4" target="_blank" rel="noopener">
+        Agenda tu valoración
+      </a>
+
+      <button class="nav-toggle" id="nav-toggle" type="button" aria-expanded="false" aria-controls="nav" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <!-- ===== Hero ===== -->
+    <section class="hero">
+      <!-- Video PLACEHOLDER (stock libre de Mixkit). Reemplazar por el video propio de la clínica cuando esté grabado. -->
+      <div class="hero__placeholder" aria-hidden="true">
+        <span class="bubble"></span><span class="bubble"></span><span class="bubble"></span>
+        <span class="bubble"></span><span class="bubble"></span>
+      </div>
+      <video class="hero__media" autoplay muted loop playsinline aria-hidden="true">
+        <source src="https://assets.mixkit.co/videos/39480/39480-360.mp4" type="video/mp4" />
+      </video>
+      <span class="hero__tag">Placeholder</span>
+
+      <div class="hero__overlay"></div>
+      <div class="container hero__content">
+        <h1 class="hero__title">Cuidamos tu salud oral con tratamientos personalizados, tecnología y estética pensada para ti.</h1>
+        <a class="btn btn--cta btn--lg" href="https://wa.link/eql0i4" target="_blank" rel="noopener">
+          <svg class="ico-wpp" viewBox="0 0 32 32" width="22" height="22" aria-hidden="true" fill="currentColor"><path d="M16.004 2.667c-7.36 0-13.337 5.977-13.337 13.337 0 2.352.616 4.652 1.785 6.677L2.667 29.333l6.83-1.79a13.27 13.27 0 0 0 6.507 1.658h.005c7.36 0 13.337-5.977 13.337-13.337 0-3.563-1.388-6.913-3.908-9.434a13.25 13.25 0 0 0-9.434-3.763zm0 24.448h-.004a11.07 11.07 0 0 1-5.638-1.544l-.404-.24-4.053 1.063 1.082-3.95-.263-.42a11.03 11.03 0 0 1-1.69-5.886c0-6.117 4.978-11.094 11.099-11.094a11.02 11.02 0 0 1 7.842 3.252 11.02 11.02 0 0 1 3.249 7.846c0 6.118-4.978 11.094-11.097 11.094zm6.085-8.31c-.333-.167-1.973-.974-2.279-1.085-.305-.111-.528-.167-.75.167-.222.333-.861 1.085-1.056 1.307-.194.222-.389.25-.722.083-.333-.167-1.408-.519-2.682-1.655-.991-.884-1.66-1.976-1.855-2.309-.194-.333-.021-.513.146-.679.15-.149.333-.389.5-.583.166-.195.222-.334.333-.556.111-.222.056-.417-.028-.583-.083-.167-.75-1.808-1.027-2.475-.27-.649-.545-.561-.75-.572l-.639-.011c-.222 0-.583.083-.889.417-.305.333-1.166 1.139-1.166 2.78 0 1.64 1.194 3.224 1.36 3.446.167.222 2.35 3.587 5.692 5.03.795.344 1.416.549 1.9.703.798.254 1.524.218 2.099.132.64-.096 1.973-.806 2.251-1.585.278-.78.278-1.448.194-1.587-.083-.139-.305-.222-.638-.389z"/></svg>
+          Agenda sin costo tu valoración
+        </a>
+      </div>
+    </section>
+
+    <!-- ===== Quiénes somos ===== -->
+    <section class="section" id="profesionales">
+      <div class="container narrow reveal">
+        <h2 class="section__title">Quiénes somos</h2>
+        <p>En nuestra clínica odontológica trabajamos con compromiso, profesionalismo y tecnología para brindar una atención integral enfocada en la salud y estética oral de nuestros pacientes.</p>
+        <p>Contamos con un equipo de profesionales capacitados en diferentes áreas de la odontología, ofreciendo tratamientos seguros, modernos y personalizados para niños, jóvenes y adultos. Nuestro objetivo es devolver sonrisas saludables, funcionales y llenas de confianza.</p>
+        <p>Nos caracterizamos por brindar un ambiente cómodo, humano y confiable, donde cada paciente recibe atención cercana y soluciones adaptadas a sus necesidades. Creemos que una sonrisa sana mejora la calidad de vida y fortalece la seguridad personal.</p>
+        <p>Trabajamos día a día para ofrecer excelencia en cada procedimiento, utilizando materiales de alta calidad y técnicas actualizadas para garantizar resultados efectivos y duraderos.</p>
+      </div>
+    </section>
+
+    <!-- ===== Comodidades ===== -->
+    <section class="section section--muted">
+      <div class="container">
+        <ul class="features">
+          <li class="feature reveal">
+            <div class="feature__photo"><img src="https://images.unsplash.com/photo-1704455306251-b4634215d98f?w=800&h=600&fit=crop&crop=edges&auto=format&q=70" alt="Consultorio y sala de espera cómodos de la clínica" loading="lazy" width="800" height="600" /></div>
+            <h3 class="feature__title">Comodidades VIP</h3>
+            <p>Wifi, TV cable, workspace, sala de recuperación privada, sala de espera amplia y confortable.</p>
+          </li>
+          <li class="feature reveal">
+            <div class="feature__photo"><img src="https://images.unsplash.com/photo-1770321119305-f191c09c5801?w=800&h=600&fit=crop&crop=edges&auto=format&q=70" alt="Equipo odontológico con monitor e instrumental" loading="lazy" width="800" height="600" /></div>
+            <h3 class="feature__title">Última tecnología</h3>
+            <p>Consultorios odontológicos equipados con la mejor tecnología.</p>
+          </li>
+          <li class="feature reveal">
+            <div class="feature__photo"><img src="https://images.unsplash.com/photo-1555085575-47bd89db1be4?w=800&h=600&fit=crop&crop=edges&auto=format&q=70" alt="Equipo de laboratorio dental propio" loading="lazy" width="800" height="600" /></div>
+            <h3 class="feature__title">Sede completa</h3>
+            <p>Contamos con laboratorio dental y unidad radiológica propios.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===== Espacio · Ubicación · Misión / Visión ===== -->
+    <section class="section">
+      <div class="container narrow reveal">
+        <h2 class="section__title">Espacio pensado para tu comodidad</h2>
+        <p>En Clínica Menta queremos que cada visita se sienta tranquila y agradable. Contamos con un consultorio cómodo y acogedor, una sala de espera equipada para nuestros pacientes y un espacio con PlayStation para niños y jóvenes mientras esperan su cita.</p>
+
+        <h2 class="section__title section__title--mt">Ubicación estratégica</h2>
+        <p>Nos encontramos en la torre médica del Centro Comercial Los Molinos, una ubicación central y de fácil acceso en Medellín. Además, en el mismo piso contamos con consultorios especializados para la realización de radiografías dentales, facilitando todo tu proceso en un solo lugar.</p>
+      </div>
+
+      <div class="container narrow">
+        <div class="purpose">
+          <article class="purpose__card purpose__card--mission reveal">
+            <span class="purpose__glyph" aria-hidden="true">“</span>
+            <span class="purpose__kicker">Misión</span>
+            <p>Brindar a nuestros pacientes todas las especialidades odontológicas con alta calidad, pero de una forma asequible para cada uno, porque creemos en la igualdad de derechos.</p>
+          </article>
+          <article class="purpose__card purpose__card--vision reveal">
+            <span class="purpose__glyph" aria-hidden="true">“</span>
+            <span class="purpose__kicker">Visión</span>
+            <p>Ser una clínica odontológica altamente reconocida en nuestro medio por su excelencia en los sistemas de calidad y en la atención a nuestros clientes.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Testimonios ===== -->
+    <section class="section section--dark" id="pacientes">
+      <div class="container testimonials">
+        <div class="testimonials__intro reveal">
+          <h2 class="section__title section__title--light">Conoce la opinión de nuestros pacientes</h2>
+          <p class="testimonials__sub">Reseñas reales de quienes ya confían su sonrisa a Clínica Menta.</p>
+        </div>
+
+        <div class="slider" id="slider">
+          <button class="slider__nav slider__nav--prev" type="button" aria-label="Testimonio anterior">‹</button>
+          <div class="slider__track" id="slider-track">
+            <figure class="quote"><div class="quote__stars" aria-label="5 de 5 estrellas">★★★★★</div><blockquote>Buena atención, excelente servicio. Me sentí en confianza durante todo el tratamiento.</blockquote><figcaption>Johana Catherin Zambrano</figcaption></figure>
+            <figure class="quote"><div class="quote__stars" aria-label="5 de 5 estrellas">★★★★★</div><blockquote>Profesionales muy capacitados y un espacio cómodo. Recomendados al cien por ciento.</blockquote><figcaption>Andrés Felipe Ríos</figcaption></figure>
+            <figure class="quote"><div class="quote__stars" aria-label="5 de 5 estrellas">★★★★★</div><blockquote>Me explicaron cada paso de mi tratamiento. Salí feliz con mi sonrisa.</blockquote><figcaption>Daniela Restrepo</figcaption></figure>
+            <figure class="quote"><div class="quote__stars" aria-label="5 de 5 estrellas">★★★★★</div><blockquote>La doctora fue muy paciente con mi hijo. Volvió contento y sin miedo al odontólogo.</blockquote><figcaption>Carolina Gómez</figcaption></figure>
+            <figure class="quote"><div class="quote__stars" aria-label="5 de 5 estrellas">★★★★★</div><blockquote>Excelente trato desde la recepción. Las instalaciones son modernas y muy limpias.</blockquote><figcaption>Juan David Marín</figcaption></figure>
+            <figure class="quote"><div class="quote__stars" aria-label="5 de 5 estrellas">★★★★★</div><blockquote>Mi ortodoncia va perfecta. Siempre me resuelven todas las dudas con amabilidad.</blockquote><figcaption>Valentina Ospina</figcaption></figure>
+            <figure class="quote"><div class="quote__stars" aria-label="5 de 5 estrellas">★★★★★</div><blockquote>Llegué con dolor y me atendieron el mismo día. Profesionalismo y calidez humana.</blockquote><figcaption>Santiago Vélez</figcaption></figure>
+            <figure class="quote"><div class="quote__stars" aria-label="5 de 5 estrellas">★★★★★</div><blockquote>El diseño de sonrisa superó mis expectativas. Resultados naturales y bonitos.</blockquote><figcaption>Laura Mejía</figcaption></figure>
+            <figure class="quote"><div class="quote__stars" aria-label="5 de 5 estrellas">★★★★★</div><blockquote>Honestos con el diagnóstico y los precios. Se nota que les importa el paciente.</blockquote><figcaption>Camilo Arango</figcaption></figure>
+            <figure class="quote"><div class="quote__stars" aria-label="5 de 5 estrellas">★★★★★</div><blockquote>La sala de espera con PlayStation fue un alivio para mis niños. Gran detalle.</blockquote><figcaption>Paola Henao</figcaption></figure>
+            <figure class="quote"><div class="quote__stars" aria-label="5 de 5 estrellas">★★★★★</div><blockquote>Me hicieron una endodoncia sin dolor. Quedé sorprendido con la tecnología.</blockquote><figcaption>Felipe Cardona</figcaption></figure>
+            <figure class="quote"><div class="quote__stars" aria-label="5 de 5 estrellas">★★★★★</div><blockquote>Ubicación muy fácil de llegar y todo en un solo lugar, incluida la radiografía.</blockquote><figcaption>Natalia Quiceno</figcaption></figure>
+            <figure class="quote"><div class="quote__stars" aria-label="5 de 5 estrellas">★★★★★</div><blockquote>Atención cercana y humana. Por fin una clínica donde no siento ansiedad.</blockquote><figcaption>Sebastián Loaiza</figcaption></figure>
+          </div>
+          <button class="slider__nav slider__nav--next" type="button" aria-label="Testimonio siguiente">›</button>
+          <div class="slider__dots" id="slider-dots" role="tablist" aria-label="Seleccionar testimonio"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Servicios (acceso a la vista) ===== -->
+    <section class="section section--muted" id="servicios-cta">
+      <div class="container svc-cta reveal">
+        <div class="svc-cta__text">
+          <h2 class="section__title">Conoce nuestros servicios</h2>
+          <p>Seis especialidades y un equipo de profesionales dedicados a cada etapa de tu sonrisa: odontología general y estética, ortodoncia, periodoncia, endodoncia, odontopediatría y rehabilitación oral.</p>
+          <a class="btn btn--cta" href="servicios.html">Ver servicios y profesionales</a>
+        </div>
+        <div class="svc-cta__art" aria-hidden="true">
+          <span class="svc-cta__count">6</span>
+          <span class="svc-cta__label">especialidades</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Contacto ===== -->
+    <section class="section" id="contacto">
+      <div class="container contact">
+        <div class="contact__info reveal">
+          <h2 class="section__title">Contacto</h2>
+          <p class="contact__lead">Si necesitas más información, no dudes en contactarnos.</p>
+          <ul class="contact__list">
+            <li><span>Dirección</span>Torre médica CC Los Molinos, piso 15, consultorio 1501. Medellín, Antioquia.</li>
+            <li><span>WhatsApp</span><a href="https://wa.me/573128729515" target="_blank" rel="noopener">+57 312 8729515</a></li>
+            <li><span>Correo</span><a href="mailto:mentaclinica.molinos@gmail.com">mentaclinica.molinos@gmail.com</a></li>
+          </ul>
+          <iframe class="contact__map" title="Ubicación Clínica Menta" loading="lazy"
+            src="https://www.google.com/maps?q=Centro+Comercial+Los+Molinos+Medellin&output=embed"></iframe>
+        </div>
+
+        <!-- Reemplazar el href por el enlace del software de agendamiento cuando esté listo -->
+        <aside class="booking reveal">
+          <h3>Agenda tu cita</h3>
+          <p>Reserva tu valoración inicial sin costo. Te atendemos directamente por WhatsApp.</p>
+          <a class="btn btn--cta btn--block" href="https://wa.link/eql0i4" target="_blank" rel="noopener">Agendar ahora</a>
+          <p class="booking__note">Respuesta en horario de atención.</p>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <img src="assets/img/logo-icono.webp" alt="Clínica Menta" width="48" height="57" />
+        <p>Clínica odontológica en Medellín especializada en tratamientos integrales de salud oral y estética dental.</p>
+      </div>
+      <div class="footer__col">
+        <h4>Contacto</h4>
+        <p>WhatsApp <a href="https://wa.me/573128729515" target="_blank" rel="noopener">+57 312 8729515</a></p>
+        <p>Torre médica CC Los Molinos, piso 15, consultorio 1501.</p>
+        <p>Medellín, Antioquia</p>
+        <p><a href="mailto:gerente.menta@gmail.com">gerente.menta@gmail.com</a></p>
+      </div>
+      <div class="footer__col">
+        <h4>Horarios</h4>
+        <p>Lunes a viernes · 8:00 a. m. – 6:00 p. m.</p>
+        <p>Sábados · 8:00 a. m. – 12:30 p. m.</p>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container">© <span id="year"></span> Clínica Menta · Medellín, Colombia</div>
+    </div>
+  </footer>
+
+  <!-- Botón flotante WhatsApp -->
+  <a class="wpp-float" href="https://wa.me/573128729515" target="_blank" rel="noopener" aria-label="Escríbenos por WhatsApp">
+    <svg viewBox="0 0 32 32" width="30" height="30" aria-hidden="true" fill="currentColor"><path d="M16.004 2.667c-7.36 0-13.337 5.977-13.337 13.337 0 2.352.616 4.652 1.785 6.677L2.667 29.333l6.83-1.79a13.27 13.27 0 0 0 6.507 1.658h.005c7.36 0 13.337-5.977 13.337-13.337 0-3.563-1.388-6.913-3.908-9.434a13.25 13.25 0 0 0-9.434-3.763zm0 24.448h-.004a11.07 11.07 0 0 1-5.638-1.544l-.404-.24-4.053 1.063 1.082-3.95-.263-.42a11.03 11.03 0 0 1-1.69-5.886c0-6.117 4.978-11.094 11.099-11.094a11.02 11.02 0 0 1 7.842 3.252 11.02 11.02 0 0 1 3.249 7.846c0 6.118-4.978 11.094-11.097 11.094zm6.085-8.31c-.333-.167-1.973-.974-2.279-1.085-.305-.111-.528-.167-.75.167-.222.333-.861 1.085-1.056 1.307-.194.222-.389.25-.722.083-.333-.167-1.408-.519-2.682-1.655-.991-.884-1.66-1.976-1.855-2.309-.194-.333-.021-.513.146-.679.15-.149.333-.389.5-.583.166-.195.222-.334.333-.556.111-.222.056-.417-.028-.583-.083-.167-.75-1.808-1.027-2.475-.27-.649-.545-.561-.75-.572l-.639-.011c-.222 0-.583.083-.889.417-.305.333-1.166 1.139-1.166 2.78 0 1.64 1.194 3.224 1.36 3.446.167.222 2.35 3.587 5.692 5.03.795.344 1.416.549 1.9.703.798.254 1.524.218 2.099.132.64-.096 1.973-.806 2.251-1.585.278-.78.278-1.448.194-1.587-.083-.139-.305-.222-.638-.389z"/></svg>
+  </a>
+
+  <script src="assets/js/main.js?v=4" defer></script>
+</body>
+</html>
