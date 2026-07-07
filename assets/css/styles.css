@@ -184,8 +184,8 @@ body[data-theme="blue"] .header__cta { color: var(--blue); }
 .purpose { display: grid; grid-template-columns: 1fr 1fr; gap: 26px; margin-top: 52px; }
 .purpose__card {
   position: relative; overflow: hidden; border-radius: 22px; padding: 42px 36px 38px;
-  color: #eef5f3; background: linear-gradient(150deg, #203c46 0%, #16303a 100%);
-  box-shadow: 0 18px 40px rgba(20,40,48,.22);
+  color: #ffffff; background: var(--blue);
+  box-shadow: 0 18px 40px rgba(33,64,90,.22);
   transition: transform .3s ease, box-shadow .3s ease;
 }
 .purpose__card::before {
@@ -198,15 +198,15 @@ body[data-theme="blue"] .header__cta { color: var(--blue); }
   position: absolute; top: -26px; right: 18px; font-family: var(--font-display);
   font-size: 11rem; line-height: 1; font-weight: 800; pointer-events: none;
 }
-.purpose__card--mission .purpose__glyph { color: rgba(156,203,59,.16); }
-.purpose__card--vision .purpose__glyph { color: rgba(69,179,204,.18); }
+.purpose__card--mission .purpose__glyph { color: rgba(156,203,59,.30); }
+.purpose__card--vision .purpose__glyph { color: rgba(20,40,70,.26); }
 .purpose__kicker {
   position: relative; display: inline-block; font-family: var(--font-display); font-weight: 700;
   font-size: .8rem; letter-spacing: .18em; text-transform: uppercase; margin-bottom: 14px;
 }
-.purpose__card--mission .purpose__kicker { color: var(--green); }
-.purpose__card--vision .purpose__kicker { color: #7fd0e2; }
-.purpose__card p { position: relative; margin: 0; font-size: 1.04rem; line-height: 1.7; color: #dfeae8; }
+.purpose__card--mission .purpose__kicker { color: #cbe98a; }
+.purpose__card--vision .purpose__kicker { color: #173350; }
+.purpose__card p { position: relative; margin: 0; font-size: 1.04rem; line-height: 1.7; color: #ffffff; }
 
 /* Testimonios */
 .testimonials { display: grid; grid-template-columns: 340px 1fr; gap: 50px; align-items: center; }
@@ -313,10 +313,14 @@ body[data-theme="blue"] .header__cta { color: var(--blue); }
   font-size: .74rem; font-weight: 600; letter-spacing: .04em; padding: 4px 11px; border-radius: 999px;
   background: rgba(156,203,59,.22); color: #d2ea9c; }
 
-/* CTA final servicios */
-.svc-final { text-align: center; }
+/* CTA final servicios — recuadro azul cyan (#45b3cc), títulos verdes, texto blanco */
+.svc-final { text-align: center; background: var(--cyan); color: #fff; }
 .svc-final__inner { max-width: 640px; margin-inline: auto; display: grid; gap: 22px; justify-items: center; }
-.svc-final p { color: #c4d2d6; margin: 0; font-size: 1.08rem; }
+.svc-final .section__title--light { color: var(--green); }
+.svc-final p { color: #eefbff; margin: 0; font-size: 1.08rem; }
+/* Botón "Agenda sin costo" aquí: blanco con letra azul cyan */
+.svc-final .btn--cta { background: #fff; color: var(--cyan); box-shadow: 0 8px 20px rgba(0,0,0,.16); }
+.svc-final .btn--cta:hover { background: #eaf8fb; color: #2f93ab; }
 
 /* Contacto */
 .contact { display: grid; grid-template-columns: 1.3fr 1fr; gap: 40px; align-items: start; }
@@ -335,7 +339,7 @@ body[data-theme="blue"] .header__cta { color: var(--blue); }
 /* Footer */
 .footer { background: var(--bg-dark); color: #c4d2d6; }
 .footer__grid { display: grid; grid-template-columns: 1.4fr 1fr 1fr; gap: 36px; padding: 56px 22px; }
-.footer__brand img { filter: brightness(0) invert(1); opacity: .9; margin-bottom: 14px; }
+.footer__brand img { height: 60px; width: auto; margin-bottom: 14px; }
 .footer__brand p { font-size: .9rem; line-height: 1.6; margin: 0; }
 .footer__col h4 { font-size: .8rem; letter-spacing: .12em; text-transform: uppercase; color: var(--green); margin-bottom: 14px; }
 .footer__col p { margin: 0 0 8px; font-size: .9rem; }
@@ -455,4 +459,75 @@ body[data-theme="blue"] .theme-switch__dot { background: var(--blue); }
   .slider__track { transition: none; }
   .reveal { opacity: 1; transform: none; transition: none; }
   .doctor__photo img, .feature__photo img, .member img, .member, .svc, .purpose__card { transition: none; }
+}
+
+/* ============================================================
+   7. Componentes añadidos (actualización web menta)
+   ============================================================ */
+
+/* Fotos del espacio — 2 recuadros bajo comodidades */
+.clinic-photos { list-style: none; margin: 34px 0 0; padding: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 22px; }
+.clinic-photos li { margin: 0; border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow-sm); aspect-ratio: 16 / 10; background: var(--bg-muted); }
+.clinic-photos img { width: 100%; height: 100%; object-fit: cover; transition: transform .5s ease; }
+.clinic-photos li:hover img { transform: scale(1.05); }
+
+/* Antes y después (dentro de nuestros pacientes) */
+.casos { padding-top: 60px; }
+.casos__head { text-align: center; max-width: 620px; margin-inline: auto; }
+.casos__title { color: #fff; font-size: clamp(1.4rem, 2.6vw, 2rem); }
+.casos__sub { color: #aab9bd; margin: 10px auto 34px; }
+.casos__grid { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(5, 1fr); gap: 16px; }
+.casos__grid li { margin: 0; border-radius: 14px; overflow: hidden; box-shadow: 0 12px 28px rgba(0,0,0,.32); background: #0f2027; aspect-ratio: 4 / 5; }
+.casos__grid img { width: 100%; height: 100%; object-fit: cover; transition: transform .5s ease; }
+.casos__grid li:hover img { transform: scale(1.06); }
+
+/* Reseñas de Google — cluster de pacientes */
+.reviews { display: flex; align-items: center; gap: 14px; margin-top: 22px; justify-content: center; }
+.reviews__avatars { display: flex; }
+.reviews__avatars img { width: 52px; height: 52px; border-radius: 50%; object-fit: cover; border: 3px solid var(--bg-dark); margin-left: -14px; box-shadow: 0 2px 8px rgba(0,0,0,.4); }
+.reviews__avatars img:first-child { margin-left: 0; }
+.reviews__meta { text-align: left; }
+.reviews__stars { color: #ffc83d; letter-spacing: 2px; font-size: 1.05rem; }
+.reviews__label { font-size: .82rem; color: #aab9bd; display: block; }
+
+/* Teaser de especialidades — arte genérico con gota (sin número) */
+.svc-cta__art img { width: 66px; height: auto; filter: brightness(0) invert(1); }
+
+/* ===== Tratamientos / Otras especialidades ===== */
+.tratamientos__intro { max-width: 720px; margin: 0 auto 40px; text-align: center; color: var(--ink-soft); }
+.tt-feature { display: grid; grid-template-columns: auto 1fr auto; align-items: center; gap: 24px;
+  background: #fff; border: 1px solid var(--border); border-radius: 22px; padding: 28px 32px;
+  box-shadow: var(--shadow-sm); margin-bottom: 40px; }
+.tt-feature__icon { width: 58px; height: 58px; border-radius: 16px; display: grid; place-items: center; flex: none;
+  background: linear-gradient(150deg, var(--green), var(--cyan)); }
+.tt-feature__icon img { width: 30px; height: auto; filter: brightness(0) invert(1); }
+.tt-feature h3 { color: var(--blue); font-size: 1.3rem; margin-bottom: 4px; }
+.tt-feature p { margin: 0; color: var(--ink-soft); font-size: .98rem; }
+.tt-feature .btn { flex: none; }
+
+.otras { border: 1px solid var(--border); border-radius: 22px; overflow: hidden; background: #fff; box-shadow: var(--shadow-sm); }
+.otras__item { border-top: 1px solid var(--border); }
+.otras__item:first-child { border-top: none; }
+.otras__item summary { cursor: pointer; list-style: none; padding: 22px 28px; display: flex; align-items: center; gap: 14px;
+  font-family: var(--font-display); font-weight: 600; font-size: 1.08rem; color: var(--ink); }
+.otras__item summary::-webkit-details-marker { display: none; }
+.otras__item summary::before { content: ""; width: 4px; height: 22px; border-radius: 4px; flex: none;
+  background: linear-gradient(var(--green), var(--cyan)); }
+.otras__item summary::after { content: "+"; margin-left: auto; font-size: 1.6rem; line-height: 1; color: var(--cyan); font-weight: 400; transition: transform .2s ease; }
+.otras__item[open] summary::after { transform: rotate(45deg); }
+.otras__item summary:hover { color: var(--blue); }
+.otras__body { padding: 0 28px 24px 46px; color: #44606a; }
+.otras__body p { margin: 0 0 12px; }
+.otras__body strong { color: var(--ink); font-family: var(--font-display); }
+.otras__body ul { margin: 8px 0 0; padding-left: 20px; }
+.otras__body li { margin-bottom: 5px; }
+
+@media (max-width: 900px) {
+  .casos__grid { grid-template-columns: repeat(3, 1fr); }
+  .tt-feature { grid-template-columns: 1fr; text-align: center; justify-items: center; }
+}
+@media (max-width: 680px) {
+  .clinic-photos { grid-template-columns: 1fr; }
+  .casos__grid { grid-template-columns: repeat(2, 1fr); }
+  .otras__body { padding-left: 28px; }
 }

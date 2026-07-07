@@ -1,37 +1,9 @@
 /* Clínica Menta — interacciones
-   - Switcher de tema de header (fase exploración)
    - Menú móvil
    - Carrusel de testimonios
 */
 (() => {
   "use strict";
-
-  /* ---- Switcher de tema ---- */
-  const themes = [
-    { id: "light", name: "Blanco" },
-    { id: "cyan", name: "Cyan" },
-    { id: "blue", name: "Azul" },
-  ];
-
-  const initTheme = () => {
-    const btn = document.getElementById("theme-switch");
-    const label = document.getElementById("theme-name");
-    const saved = localStorage.getItem("menta-theme");
-    let index = Math.max(0, themes.findIndex((t) => t.id === saved));
-
-    const apply = () => {
-      const theme = themes[index];
-      document.body.dataset.theme = theme.id;
-      label.textContent = theme.name;
-      localStorage.setItem("menta-theme", theme.id);
-    };
-
-    btn.addEventListener("click", () => {
-      index = (index + 1) % themes.length;
-      apply();
-    });
-    apply();
-  };
 
   /* ---- Menú móvil ---- */
   const initNav = () => {
@@ -126,7 +98,6 @@
   };
 
   document.addEventListener("DOMContentLoaded", () => {
-    initTheme();
     initNav();
     initSlider();
     initReveal();
