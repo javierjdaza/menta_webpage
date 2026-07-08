@@ -10,8 +10,8 @@
   <link rel="icon" type="image/png" href="assets/img/favicon.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="assets/css/styles.css?v=9" />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Manrope:wght@400..800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/styles.css?v=13" />
 </head>
 <body data-theme="light">
   <a class="skip-link" href="#contenido">Saltar al contenido</a>
@@ -25,7 +25,7 @@
       <nav class="nav" id="nav" aria-label="Navegación principal">
         <a href="index.html#inicio">Inicio</a>
         <a href="servicios.html" aria-current="page">Especialidades</a>
-        <a href="servicios.html#tratamientos">Tratamientos</a>
+        <a href="tratamientos.html">Tratamientos</a>
         <a href="index.html#pacientes">Nuestros pacientes</a>
         <a href="index.html#contacto">Contacto</a>
       </nav>
@@ -47,339 +47,42 @@
       </div>
     </section>
 
-    <div class="container svc-list">
-
-      <!-- Odontología general y estética -->
-      <article class="svc reveal" id="odontologia">
-        <div class="svc__info">
-          <h2 class="svc__title">Odontología general y estética</h2>
-          <p class="svc__desc">Combinamos prevención, salud oral y tratamientos estéticos para ayudarte a mantener una sonrisa sana, natural y llena de confianza.</p>
-        </div>
-        <div class="svc__team">
-          <figure class="doctor">
-            <div class="doctor__photo"><img src="assets/img/doctores/david-giraldo.webp" alt="Doctor David Giraldo" loading="lazy" width="600" height="800" /></div>
-            <figcaption><strong>Dr. David Giraldo</strong><span>Odontólogo estético</span></figcaption>
-          </figure>
-          <figure class="doctor">
-            <div class="doctor__photo"><img src="assets/img/doctores/maria-paulina.webp" alt="Doctora María Paulina" loading="lazy" width="600" height="800" /></div>
-            <figcaption><strong>Dra. María Paulina</strong><span>Odontóloga estética</span></figcaption>
-          </figure>
-        </div>
-      </article>
-
-      <!-- Ortodoncia -->
-      <article class="svc svc--rev reveal">
-        <div class="svc__info">
-          <h2 class="svc__title">Ortodoncia</h2>
-          <p class="svc__desc">Corregimos la posición de los dientes y la mordida para lograr una sonrisa más armónica, funcional y saludable.</p>
-        </div>
-        <div class="svc__team">
-          <figure class="doctor">
-            <div class="doctor__photo"><img src="assets/img/doctores/jorge-fernandez.webp" alt="Doctor Jorge Fernández" loading="lazy" width="600" height="800" /></div>
-            <figcaption><strong>Dr. Jorge Fernández</strong><span>Ortodoncista</span></figcaption>
-          </figure>
-          <figure class="doctor">
-            <div class="doctor__photo"><img src="assets/img/doctores/claudia-carvajal.webp" alt="Doctora Claudia Carvajal" loading="lazy" width="600" height="800" /></div>
-            <figcaption><strong>Dra. Claudia Carvajal</strong><span>Ortodoncista</span></figcaption>
-          </figure>
-        </div>
-      </article>
-
-      <!-- Periodoncia -->
-      <article class="svc reveal">
-        <div class="svc__info">
-          <h2 class="svc__title">Periodoncia</h2>
-          <p class="svc__desc">Especialidad dedicada al cuidado de las encías y tejidos de soporte dental, fundamentales para mantener una sonrisa sana y duradera.</p>
-        </div>
-        <div class="svc__team svc__team--solo">
-          <figure class="doctor">
-            <div class="doctor__photo"><img src="assets/img/doctores/valeria-montoya.webp" alt="Doctora Valeria Montoya" loading="lazy" width="600" height="800" /></div>
-            <figcaption><strong>Dra. Valeria Montoya</strong><span>Periodoncista</span></figcaption>
-          </figure>
-        </div>
-      </article>
-
-      <!-- Endodoncia -->
-      <article class="svc svc--rev reveal">
-        <div class="svc__info">
-          <h2 class="svc__title">Endodoncia</h2>
-          <p class="svc__desc">Tratamientos enfocados en salvar dientes afectados por infecciones o dolor, preservando tu salud oral y evitando extracciones innecesarias.</p>
-        </div>
-        <div class="svc__team svc__team--solo">
-          <figure class="doctor">
-            <div class="doctor__photo"><img src="assets/img/doctores/marcela-quintero.webp" alt="Doctora Marcela Quintero" loading="lazy" width="600" height="800" /></div>
-            <figcaption><strong>Dra. Marcela Quintero</strong><span>Endodoncista</span></figcaption>
-          </figure>
-        </div>
-      </article>
-
-      <!-- Odontopediatría -->
-      <article class="svc reveal">
-        <div class="svc__info">
-          <h2 class="svc__title">Odontopediatría</h2>
-          <p class="svc__desc">Cuidamos la salud oral de los más pequeños mediante atención especializada, prevención y tratamientos diseñados para acompañar cada etapa de su crecimiento con confianza y tranquilidad.</p>
-        </div>
-        <div class="svc__team svc__team--solo">
-          <figure class="doctor">
-            <div class="doctor__photo"><img src="assets/img/doctores/katherina.webp" alt="Doctora Katherina Ramírez" loading="lazy" width="600" height="800" /></div>
-            <figcaption><strong>Dra. Katherina Ramírez</strong><span>Odontopediatra</span></figcaption>
-          </figure>
-        </div>
-      </article>
-
-      <!-- Rehabilitación oral -->
-      <article class="svc svc--rev reveal">
-        <div class="svc__info">
-          <h2 class="svc__title">Rehabilitación oral</h2>
-          <p class="svc__desc">Recuperamos la función, estética y armonía de tu sonrisa mediante tratamientos personalizados que te permiten volver a sonreír con confianza.</p>
-        </div>
-        <div class="svc__team svc__team--solo">
-          <figure class="doctor">
-            <div class="doctor__photo"><img src="assets/img/doctores/rehabilitacion.webp" alt="Doctor Jhonathan Marmolejo" loading="lazy" width="600" height="800" /></div>
-            <figcaption><strong>Dr. Jhonathan Marmolejo</strong><span>Rehabilitador oral</span></figcaption>
-          </figure>
-        </div>
-      </article>
-    </div>
-
-    <!-- ===== Tratamientos ===== -->
-    <section class="section section--muted" id="tratamientos">
-      <div class="container">
-        <!-- Intro con foto grande -->
-        <div class="tt-hero reveal">
-          <div class="tt-hero__text">
-            <span class="kicker">Clínica Menta · Medellín</span>
-            <h2>Tratamientos diseñados para transformar tu sonrisa</h2>
-            <p>Conoce nuestras especialidades y encuentra el tratamiento ideal para mejorar la salud, función y estética de tu sonrisa.</p>
-            <a class="btn btn--cta" href="https://wa.link/eql0i4" target="_blank" rel="noopener">Agenda tu valoración →</a>
-          </div>
-          <div class="tt-hero__img"><img src="assets/img/tratamientos/hero-tratamientos.webp" alt="Paciente sonriendo en Clínica Menta" loading="lazy" width="900" height="1125" /></div>
-        </div>
-
-        <!-- Grid de tratamientos expandibles -->
-        <h3 class="tt-grid__title">Elige el tratamiento ideal para ti</h3>
-        <div class="tt-grid reveal">
-
-          <!-- Odontología estética -->
-          <details class="tt-card" id="tt-odontologia">
-            <summary>
-              <span class="tt-card__img"><img src="assets/img/tratamientos/odontologia-estetica.webp" alt="Odontología estética" loading="lazy" width="700" height="438" /></span>
-              <span class="tt-card__body">
-                <strong>Odontología estética</strong>
-                <span class="tt-card__desc">Diseño de sonrisa, carillas y blanqueamiento.</span>
-                <span class="tt-card__more">Conocer más →</span>
-              </span>
-            </summary>
-            <div class="tt-panel">
-              <p class="tt-panel__lead">El diseño de sonrisa busca armonizar la forma, color y proporción de los dientes para lograr una sonrisa natural y personalizada.</p>
-              <ul class="tt-panel__list">
-                <li>Resultados naturales y duraderos</li>
-                <li>Diseño digital previo al tratamiento</li>
-                <li>Especialistas certificados</li>
-              </ul>
-              <a class="btn btn--cta" href="https://wa.link/eql0i4" target="_blank" rel="noopener">Agenda tu valoración</a>
-
-              <ul class="tt-sub">
-                <li>
-                  <div class="tt-sub__img"><img src="assets/img/tratamientos/carillas.webp" alt="Carillas dentales" loading="lazy" width="600" height="1066" /></div>
-                  <div class="tt-sub__txt"><strong>Carillas dentales</strong><span>Cobertura estética instantánea.</span></div>
-                </li>
-                <li>
-                  <div class="tt-sub__img"><img src="assets/img/tratamientos/microdiseno.webp" alt="Microdiseño de sonrisa" loading="lazy" width="600" height="750" /></div>
-                  <div class="tt-sub__txt"><strong>Microdiseño</strong><span>Ajustes mínimos, gran impacto.</span></div>
-                </li>
-                <li>
-                  <div class="tt-sub__img"><img src="assets/img/tratamientos/blanqueamiento.webp" alt="Blanqueamiento dental" loading="lazy" width="600" height="900" /></div>
-                  <div class="tt-sub__txt"><strong>Blanqueamiento</strong><span>Sonrisa más blanca y luminosa.</span></div>
-                </li>
-                <li>
-                  <div class="tt-sub__img"><img src="assets/img/tratamientos/ortodoncia-estetica.webp" alt="Ortodoncia estética" loading="lazy" width="600" height="900" /></div>
-                  <div class="tt-sub__txt"><strong>Ortodoncia estética</strong><span>Alineación discreta y elegante.</span></div>
-                </li>
-              </ul>
-            </div>
-          </details>
-
-          <!-- Ortodoncia -->
-          <details class="tt-card" id="tt-ortodoncia">
-            <summary>
-              <span class="tt-card__img"><img src="assets/img/tratamientos/ortodoncia.webp" alt="Ortodoncia" loading="lazy" width="700" height="518" /></span>
-              <span class="tt-card__body">
-                <strong>Ortodoncia</strong>
-                <span class="tt-card__desc">Damon, brackets y alineadores invisibles.</span>
-                <span class="tt-card__more">Conocer más →</span>
-              </span>
-            </summary>
-            <div class="tt-panel">
-              <p class="tt-panel__lead">Corregimos la posición de los dientes y la mordida con distintos sistemas, según tu caso y tu estilo de vida. Más abajo encuentras el sistema ideal para ti.</p>
-            </div>
-          </details>
-
-          <!-- Implantes dentales -->
-          <details class="tt-card" id="tt-implantes">
-            <summary>
-              <span class="tt-card__img"><img src="assets/img/tratamientos/implantes.webp" alt="Implantes dentales" loading="lazy" width="700" height="468" /></span>
-              <span class="tt-card__body">
-                <strong>Implantes dentales</strong>
-                <span class="tt-card__desc">Recupera la función y estética de tu sonrisa.</span>
-                <span class="tt-card__more">Conocer más →</span>
-              </span>
-            </summary>
-            <div class="tt-panel">
-              <p class="tt-panel__lead">Los implantes dentales son la mejor alternativa para reemplazar dientes perdidos de manera fija, funcional y estética. Permiten recuperar la capacidad de masticar, hablar y sonreír con total confianza, preservando además el hueso y la estructura facial.</p>
-              <h4>Beneficios</h4>
-              <ul class="tt-panel__benefits">
-                <li>Apariencia natural</li>
-                <li>Recuperan la función masticatoria</li>
-                <li>Evitan la pérdida ósea</li>
-                <li>Alta durabilidad</li>
-              </ul>
-            </div>
-          </details>
-
-          <!-- Rehabilitación oral -->
-          <details class="tt-card" id="tt-rehabilitacion">
-            <summary>
-              <span class="tt-card__img"><img src="assets/img/tratamientos/rehabilitacion.webp" alt="Rehabilitación oral" loading="lazy" width="700" height="467" /></span>
-              <span class="tt-card__body">
-                <strong>Rehabilitación oral</strong>
-                <span class="tt-card__desc">Devuelve forma y función a tu boca.</span>
-                <span class="tt-card__more">Conocer más →</span>
-              </span>
-            </summary>
-            <div class="tt-panel">
-              <p class="tt-panel__lead">Recuperamos la función y estética de tu sonrisa mediante tratamientos personalizados que restauran dientes desgastados, fracturados o perdidos.</p>
-              <p class="tt-panel__lead">Nuestro objetivo es devolver el equilibrio, la comodidad y la confianza al sonreír.</p>
-            </div>
-          </details>
-
-          <!-- Endodoncia -->
-          <details class="tt-card" id="tt-endodoncia">
-            <summary>
-              <span class="tt-card__img"><img src="assets/img/tratamientos/endodoncia.webp" alt="Endodoncia" loading="lazy" width="700" height="467" /></span>
-              <span class="tt-card__body">
-                <strong>Endodoncia</strong>
-                <span class="tt-card__desc">Tratamientos de conducto sin dolor.</span>
-                <span class="tt-card__more">Conocer más →</span>
-              </span>
-            </summary>
-            <div class="tt-panel">
-              <p class="tt-panel__lead">La endodoncia permite tratar infecciones profundas dentro del diente, eliminando el dolor y conservando la pieza dental siempre que sea posible.</p>
-              <p class="tt-panel__lead">Es un tratamiento seguro que evita, en muchos casos, la extracción del diente.</p>
-            </div>
-          </details>
-
-          <!-- Periodoncia -->
-          <details class="tt-card" id="tt-periodoncia">
-            <summary>
-              <span class="tt-card__img"><img src="assets/img/tratamientos/periodoncia.webp" alt="Periodoncia" loading="lazy" width="700" height="400" /></span>
-              <span class="tt-card__body">
-                <strong>Periodoncia</strong>
-                <span class="tt-card__desc">Salud de encías para una sonrisa fuerte.</span>
-                <span class="tt-card__more">Conocer más →</span>
-              </span>
-            </summary>
-            <div class="tt-panel">
-              <p class="tt-panel__lead">La salud de las encías es fundamental para mantener una sonrisa sana.</p>
-              <p class="tt-panel__lead">La periodoncia previene, diagnostica y trata enfermedades que afectan las encías y el hueso que sostiene los dientes, ayudando a conservarlos a largo plazo.</p>
-            </div>
-          </details>
-
-          <!-- Cirugía oral -->
-          <details class="tt-card" id="tt-cirugia">
-            <summary>
-              <span class="tt-card__img"><img src="assets/img/tratamientos/cirugia.webp" alt="Cirugía oral" loading="lazy" width="700" height="873" /></span>
-              <span class="tt-card__body">
-                <strong>Cirugía oral</strong>
-                <span class="tt-card__desc">Procedimientos quirúrgicos especializados.</span>
-                <span class="tt-card__more">Conocer más →</span>
-              </span>
-            </summary>
-            <div class="tt-panel">
-              <p class="tt-panel__lead">Realizamos procedimientos quirúrgicos enfocados en preservar la salud oral y mejorar la funcionalidad de la boca, utilizando técnicas seguras y un acompañamiento profesional durante todo el proceso.</p>
-            </div>
-          </details>
-
-          <!-- Odontopediatría -->
-          <details class="tt-card" id="tt-odontopediatria">
-            <summary>
-              <span class="tt-card__img"><img src="assets/img/tratamientos/odontopediatria.webp" alt="Odontopediatría" loading="lazy" width="700" height="875" /></span>
-              <span class="tt-card__body">
-                <strong>Odontopediatría</strong>
-                <span class="tt-card__desc">Cuidado dental especializado para niños.</span>
-                <span class="tt-card__more">Conocer más →</span>
-              </span>
-            </summary>
-            <div class="tt-panel">
-              <p class="tt-panel__lead">Acompañamos el crecimiento de la sonrisa de los más pequeños mediante atención preventiva y tratamientos especializados para cada etapa de su desarrollo.</p>
-              <p class="tt-panel__lead">Buscamos que cada visita sea una experiencia positiva, fomentando hábitos saludables desde la infancia.</p>
-            </div>
-          </details>
-
-        </div>
-
-        <!-- Blanqueamiento — siempre visible (sin fotos) -->
-        <div class="tt-block reveal">
-          <div class="tt-tiers-wrap">
-            <span class="kicker">Blanqueamiento</span>
-            <h4>Elige tu tipo de blanqueamiento</h4>
-            <div class="tt-tiers">
-              <div class="tt-tier">
-                <strong>Con férulas</strong>
-                <dl>
-                  <dt>Duración</dt><dd>2-3 semanas</dd>
-                  <dt>Ideal para</dt><dd>Resultados graduales</dd>
-                  <dt>Beneficios</dt><dd>Cómodo y de bajo costo</dd>
-                </dl>
-              </div>
-              <div class="tt-tier tt-tier--popular">
-                <span class="tt-tier__badge">Más popular</span>
-                <strong>LED</strong>
-                <dl>
-                  <dt>Duración</dt><dd>1 sesión, 60 min</dd>
-                  <dt>Ideal para</dt><dd>Resultados rápidos</dd>
-                  <dt>Beneficios</dt><dd>Visible desde la primera cita</dd>
-                </dl>
-              </div>
-              <div class="tt-tier">
-                <strong>Premium</strong>
-                <dl>
-                  <dt>Duración</dt><dd>2 sesiones</dd>
-                  <dt>Ideal para</dt><dd>Máxima blancura</dd>
-                  <dt>Beneficios</dt><dd>Resultado superior y duradero</dd>
-                </dl>
-              </div>
-            </div>
-            <a class="btn btn--cta" href="https://wa.link/eql0i4" target="_blank" rel="noopener">Quiero este tratamiento</a>
-          </div>
-        </div>
-
-        <!-- Ortodoncia · sistemas — siempre visible -->
-        <div class="tt-block reveal">
-          <div class="tt-tiers-wrap">
-            <span class="kicker">Ortodoncia</span>
-            <h4>Encuentra tu sistema ideal</h4>
-          </div>
-          <ul class="tt-sub tt-sub--systems">
-            <li>
-              <div class="tt-sub__img"><img src="assets/img/tratamientos/damon.webp" alt="Sistema Damon" loading="lazy" width="600" height="333" /></div>
-              <div class="tt-sub__txt"><strong>Sistema Damon</strong><dl><dt>Tiempo</dt><dd>12-18 meses</dd><dt>Ideal para</dt><dd>Casos complejos</dd></dl></div>
-            </li>
-            <li>
-              <div class="tt-sub__img"><img src="assets/img/tratamientos/brackets-esteticos.webp" alt="Brackets estéticos" loading="lazy" width="600" height="391" /></div>
-              <div class="tt-sub__txt"><strong>Brackets estéticos</strong><dl><dt>Tiempo</dt><dd>14-20 meses</dd><dt>Ideal para</dt><dd>Discreción</dd></dl></div>
-            </li>
-            <li>
-              <div class="tt-sub__img"><img src="assets/img/tratamientos/brackets-metalicos.webp" alt="Brackets metálicos" loading="lazy" width="600" height="444" /></div>
-              <div class="tt-sub__txt"><strong>Brackets metálicos</strong><dl><dt>Tiempo</dt><dd>12-18 meses</dd><dt>Ideal para</dt><dd>Presupuesto</dd></dl></div>
-            </li>
-            <li>
-              <div class="tt-sub__img"><img src="assets/img/tratamientos/alineadores.webp" alt="Alineadores invisibles" loading="lazy" width="600" height="400" /></div>
-              <div class="tt-sub__txt"><strong>Alineadores invisibles</strong><dl><dt>Tiempo</dt><dd>6-12 meses</dd><dt>Ideal para</dt><dd>Vida activa</dd></dl></div>
-            </li>
-          </ul>
-        </div>
-      </div>
+    <!-- ===== Mosaico del equipo ===== -->
+    <section class="container team-section">
+      <ul class="mosaic">
+        <li class="member reveal">
+          <img src="assets/img/doctores/david-giraldo.webp" alt="Doctor David Giraldo" loading="lazy" width="600" height="800" />
+          <div class="member__info"><strong>Dr. David Giraldo</strong><span class="member__pill">Odontólogo estético</span></div>
+        </li>
+        <li class="member reveal">
+          <img src="assets/img/doctores/maria-paulina.webp" alt="Doctora María Paulina" loading="lazy" width="600" height="800" />
+          <div class="member__info"><strong>Dra. María Paulina</strong><span class="member__pill">Odontóloga estética</span></div>
+        </li>
+        <li class="member reveal">
+          <img src="assets/img/doctores/jorge-fernandez.webp" alt="Doctor Jorge Fernández" loading="lazy" width="600" height="800" />
+          <div class="member__info"><strong>Dr. Jorge Fernández</strong><span class="member__pill">Ortodoncista</span></div>
+        </li>
+        <li class="member reveal">
+          <img src="assets/img/doctores/claudia-carvajal.webp" alt="Doctora Claudia Carvajal" loading="lazy" width="600" height="800" />
+          <div class="member__info"><strong>Dra. Claudia Carvajal</strong><span class="member__pill">Ortodoncista</span></div>
+        </li>
+        <li class="member reveal">
+          <img src="assets/img/doctores/valeria-montoya.webp" alt="Doctora Valeria Montoya" loading="lazy" width="600" height="800" />
+          <div class="member__info"><strong>Dra. Valeria Montoya</strong><span class="member__pill">Periodoncista</span></div>
+        </li>
+        <li class="member reveal">
+          <img src="assets/img/doctores/marcela-quintero.webp" alt="Doctora Marcela Quintero" loading="lazy" width="600" height="800" />
+          <div class="member__info"><strong>Dra. Marcela Quintero</strong><span class="member__pill">Endodoncista</span></div>
+        </li>
+        <li class="member reveal">
+          <img src="assets/img/doctores/katherina.webp" alt="Doctora Katherina Ramírez" loading="lazy" width="600" height="800" />
+          <div class="member__info"><strong>Dra. Katherina Ramírez</strong><span class="member__pill">Odontopediatra</span></div>
+        </li>
+        <li class="member reveal">
+          <img src="assets/img/doctores/rehabilitacion.webp" alt="Doctor Jhonathan Marmolejo" loading="lazy" width="600" height="800" />
+          <div class="member__info"><strong>Dr. Jhonathan Marmolejo</strong><span class="member__pill">Rehabilitador oral</span></div>
+        </li>
+      </ul>
     </section>
 
     <!-- ===== CTA final ===== -->
