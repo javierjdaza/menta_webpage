@@ -114,7 +114,7 @@ body[data-theme="blue"] .header__cta { color: var(--blue); }
 /* ---------- 4. Secciones ---------- */
 .section { padding: 84px 0; }
 .section--muted { background: var(--bg-muted); }
-.section--dark { background: var(--bg-dark); color: #dfe9ec; }
+.section--dark { background: var(--cyan); color: #ffffff; }
 
 .section__title { font-size: clamp(1.7rem, 3vw, 2.3rem); font-weight: 700; margin-bottom: 22px; text-wrap: balance; }
 .section__title--mt { margin-top: 56px; }
@@ -184,39 +184,39 @@ body[data-theme="blue"] .header__cta { color: var(--blue); }
 .purpose { display: grid; grid-template-columns: 1fr 1fr; gap: 26px; margin-top: 52px; }
 .purpose__card {
   position: relative; overflow: hidden; border-radius: 22px; padding: 42px 36px 38px;
-  color: #ffffff; background: var(--blue);
-  box-shadow: 0 18px 40px rgba(33,64,90,.22);
+  color: #ffffff; background: linear-gradient(150deg, #6fa61f 0%, #4c831a 100%);
+  box-shadow: 0 18px 40px rgba(60,110,20,.22);
   transition: transform .3s ease, box-shadow .3s ease;
 }
 .purpose__card::before {
   content: ""; position: absolute; left: 0; top: 0; width: 6px; height: 100%;
 }
-.purpose__card--mission::before { background: linear-gradient(var(--green), var(--green-dark)); }
-.purpose__card--vision::before { background: linear-gradient(var(--cyan), var(--blue)); }
-.purpose__card:hover { transform: translateY(-6px); box-shadow: 0 26px 54px rgba(20,40,48,.30); }
+.purpose__card--mission::before { background: linear-gradient(#eaf7cf, #c3e87a); }
+.purpose__card--vision::before { background: linear-gradient(#c3e87a, #9ccb3b); }
+.purpose__card:hover { transform: translateY(-6px); box-shadow: 0 26px 54px rgba(60,110,20,.30); }
 .purpose__glyph {
   position: absolute; top: -26px; right: 18px; font-family: var(--font-display);
   font-size: 11rem; line-height: 1; font-weight: 800; pointer-events: none;
 }
-.purpose__card--mission .purpose__glyph { color: rgba(156,203,59,.30); }
-.purpose__card--vision .purpose__glyph { color: rgba(20,40,70,.26); }
+.purpose__card--mission .purpose__glyph { color: rgba(255,255,255,.20); }
+.purpose__card--vision .purpose__glyph { color: rgba(255,255,255,.18); }
 .purpose__kicker {
   position: relative; display: inline-block; font-family: var(--font-display); font-weight: 700;
   font-size: .8rem; letter-spacing: .18em; text-transform: uppercase; margin-bottom: 14px;
 }
-.purpose__card--mission .purpose__kicker { color: #cbe98a; }
-.purpose__card--vision .purpose__kicker { color: #173350; }
+.purpose__card--mission .purpose__kicker { color: #eaf7cf; }
+.purpose__card--vision .purpose__kicker { color: #eaf7cf; }
 .purpose__card p { position: relative; margin: 0; font-size: 1.04rem; line-height: 1.7; color: #ffffff; }
 
 /* Testimonios */
 .testimonials { display: grid; grid-template-columns: 340px 1fr; gap: 50px; align-items: center; }
-.testimonials__sub { color: #aab9bd; margin: 0; }
+.testimonials__sub { color: #eafaff; margin: 0; }
 .slider { position: relative; overflow: hidden; }
 .slider__track { display: flex; transition: transform .5s ease; }
 .quote { flex: 0 0 100%; margin: 0; padding: 10px 54px; text-align: center; }
 .quote__stars { color: #ffc83d; letter-spacing: 3px; font-size: 1.1rem; margin-bottom: 14px; }
 .quote blockquote { margin: 0 0 16px; font-size: 1.15rem; color: #fff; line-height: 1.55; }
-.quote figcaption { font-family: var(--font-display); font-weight: 600; color: var(--green); }
+.quote figcaption { font-family: var(--font-display); font-weight: 600; color: #ffffff; }
 .slider__nav {
   position: absolute; top: 50%; transform: translateY(-50%); z-index: 2;
   width: 40px; height: 40px; border-radius: 50%; border: 1px solid rgba(255,255,255,.3);
@@ -228,7 +228,7 @@ body[data-theme="blue"] .header__cta { color: var(--blue); }
 .slider__nav--next { right: 0; }
 .slider__dots { display: flex; gap: 8px; justify-content: center; margin-top: 18px; }
 .slider__dots button { width: 9px; height: 9px; border-radius: 50%; border: none; background: rgba(255,255,255,.3); cursor: pointer; padding: 0; }
-.slider__dots button[aria-selected="true"] { background: var(--green); }
+.slider__dots button[aria-selected="true"] { background: #ffffff; }
 
 /* Acceso a Servicios (home) */
 .svc-cta { display: grid; grid-template-columns: 1fr auto; gap: 40px; align-items: center;
@@ -243,7 +243,7 @@ body[data-theme="blue"] .header__cta { color: var(--blue); }
 
 /* ===== Vista de servicios ===== */
 .svc-hero { position: relative; overflow: hidden; padding: 86px 0 70px;
-  background: linear-gradient(150deg, #203c46, #16303a); color: #eef5f3; }
+  background: var(--cyan); color: #ffffff; }
 .svc-hero__bg { position: absolute; inset: 0; pointer-events: none; }
 .svc-hero__bg span { position: absolute; border-radius: 50%; filter: blur(8px); opacity: .35; }
 .svc-hero__bg span:nth-child(1){ width: 280px; height: 280px; background: var(--green); top: -90px; right: 8%; }
@@ -252,8 +252,9 @@ body[data-theme="blue"] .header__cta { color: var(--blue); }
 .svc-hero__content { position: relative; max-width: 720px; }
 .kicker { font-family: var(--font-display); font-weight: 700; font-size: .8rem; letter-spacing: .2em;
   text-transform: uppercase; color: var(--green); }
+.svc-hero .kicker { color: #eafaff; }
 .svc-hero h1 { font-size: clamp(2.4rem, 6vw, 3.6rem); margin: 12px 0 18px; color: #fff; }
-.svc-hero p { color: #c8dad6; font-size: 1.1rem; margin: 0; max-width: 620px; }
+.svc-hero p { color: #eafaff; font-size: 1.1rem; margin: 0; max-width: 620px; }
 
 .svc-list { padding: 80px 22px; display: grid; gap: 30px; }
 .svc {
@@ -337,15 +338,15 @@ body[data-theme="blue"] .header__cta { color: var(--blue); }
 .booking__note { font-size: .82rem; text-align: center; margin: 14px 0 0; }
 
 /* Footer */
-.footer { background: var(--bg-dark); color: #c4d2d6; }
+.footer { background: var(--cyan); color: #f0fbff; }
 .footer__grid { display: grid; grid-template-columns: 1.4fr 1fr 1fr; gap: 36px; padding: 56px 22px; }
-.footer__brand img { height: 60px; width: auto; margin-bottom: 14px; }
+.footer__brand img { height: 60px; width: auto; margin-bottom: 14px; filter: brightness(0) invert(1); }
 .footer__brand p { font-size: .9rem; line-height: 1.6; margin: 0; }
-.footer__col h4 { font-size: .8rem; letter-spacing: .12em; text-transform: uppercase; color: var(--green); margin-bottom: 14px; }
+.footer__col h4 { font-size: .8rem; letter-spacing: .12em; text-transform: uppercase; color: #ffffff; margin-bottom: 14px; }
 .footer__col p { margin: 0 0 8px; font-size: .9rem; }
-.footer__col a { color: #c4d2d6; text-decoration: none; }
-.footer__col a:hover { color: #fff; }
-.footer__bottom { border-top: 1px solid rgba(255,255,255,.1); font-size: .82rem; color: #8ea1a6; }
+.footer__col a { color: #eafaff; text-decoration: none; }
+.footer__col a:hover { color: #fff; text-decoration: underline; }
+.footer__bottom { border-top: 1px solid rgba(255,255,255,.25); font-size: .82rem; color: rgba(255,255,255,.85); }
 .footer__bottom .container { padding-block: 18px; }
 
 /* WhatsApp flotante */
@@ -465,69 +466,129 @@ body[data-theme="blue"] .theme-switch__dot { background: var(--blue); }
    7. Componentes añadidos (actualización web menta)
    ============================================================ */
 
-/* Fotos del espacio — 2 recuadros bajo comodidades */
-.clinic-photos { list-style: none; margin: 34px 0 0; padding: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 22px; }
-.clinic-photos li { margin: 0; border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow-sm); aspect-ratio: 16 / 10; background: var(--bg-muted); }
-.clinic-photos img { width: 100%; height: 100%; object-fit: cover; transition: transform .5s ease; }
-.clinic-photos li:hover img { transform: scale(1.05); }
+/* Fotos del espacio — 2 recuadros (tarjetas foto + texto) bajo comodidades */
+.clinic-photos { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 26px; }
+.clinic-photo { margin: 0; background: #fff; border: 1px solid var(--border); border-radius: var(--radius); padding: 18px; box-shadow: var(--shadow-sm); }
+.clinic-photo__img { aspect-ratio: 4 / 3; border-radius: var(--radius-sm); overflow: hidden; background: var(--bg-muted); }
+.clinic-photo__img img { width: 100%; height: 100%; object-fit: cover; transition: transform .5s ease; }
+.clinic-photo:hover .clinic-photo__img img { transform: scale(1.05); }
+.clinic-photo__title { color: var(--cyan); font-size: 1.15rem; margin: 16px 0 8px; }
+.clinic-photo p { color: var(--ink-soft); font-size: .94rem; margin: 0; }
+
+/* Teaser especialidades sin arte (una sola columna) */
+.svc-cta--solo { grid-template-columns: 1fr; text-align: center; }
+.svc-cta--solo .svc-cta__text { max-width: 680px; margin-inline: auto; }
 
 /* Antes y después (dentro de nuestros pacientes) */
 .casos { padding-top: 60px; }
 .casos__head { text-align: center; max-width: 620px; margin-inline: auto; }
 .casos__title { color: #fff; font-size: clamp(1.4rem, 2.6vw, 2rem); }
-.casos__sub { color: #aab9bd; margin: 10px auto 34px; }
+.casos__sub { color: #eafaff; margin: 10px auto 34px; }
 .casos__grid { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(5, 1fr); gap: 16px; }
-.casos__grid li { margin: 0; border-radius: 14px; overflow: hidden; box-shadow: 0 12px 28px rgba(0,0,0,.32); background: #0f2027; aspect-ratio: 4 / 5; }
+.casos__grid li { margin: 0; border-radius: 14px; overflow: hidden; box-shadow: 0 12px 28px rgba(0,0,0,.22); background: rgba(255,255,255,.15); aspect-ratio: 4 / 5; }
 .casos__grid img { width: 100%; height: 100%; object-fit: cover; transition: transform .5s ease; }
 .casos__grid li:hover img { transform: scale(1.06); }
 
 /* Reseñas de Google — cluster de pacientes */
 .reviews { display: flex; align-items: center; gap: 14px; margin-top: 22px; justify-content: center; }
 .reviews__avatars { display: flex; }
-.reviews__avatars img { width: 52px; height: 52px; border-radius: 50%; object-fit: cover; border: 3px solid var(--bg-dark); margin-left: -14px; box-shadow: 0 2px 8px rgba(0,0,0,.4); }
+.reviews__avatars img { width: 52px; height: 52px; border-radius: 50%; object-fit: cover; border: 3px solid var(--cyan); margin-left: -14px; box-shadow: 0 2px 8px rgba(0,0,0,.25); }
 .reviews__avatars img:first-child { margin-left: 0; }
 .reviews__meta { text-align: left; }
-.reviews__stars { color: #ffc83d; letter-spacing: 2px; font-size: 1.05rem; }
-.reviews__label { font-size: .82rem; color: #aab9bd; display: block; }
+.reviews__stars { color: #ffe08a; letter-spacing: 2px; font-size: 1.05rem; }
+.reviews__label { font-size: .82rem; color: #eafaff; display: block; }
 
 /* Teaser de especialidades — arte genérico con gota (sin número) */
 .svc-cta__art img { width: 66px; height: auto; filter: brightness(0) invert(1); }
 
-/* ===== Tratamientos / Otras especialidades ===== */
-.tratamientos__intro { max-width: 720px; margin: 0 auto 40px; text-align: center; color: var(--ink-soft); }
-.tt-feature { display: grid; grid-template-columns: auto 1fr auto; align-items: center; gap: 24px;
-  background: #fff; border: 1px solid var(--border); border-radius: 22px; padding: 28px 32px;
-  box-shadow: var(--shadow-sm); margin-bottom: 40px; }
-.tt-feature__icon { width: 58px; height: 58px; border-radius: 16px; display: grid; place-items: center; flex: none;
-  background: linear-gradient(150deg, var(--green), var(--cyan)); }
-.tt-feature__icon img { width: 30px; height: auto; filter: brightness(0) invert(1); }
-.tt-feature h3 { color: var(--blue); font-size: 1.3rem; margin-bottom: 4px; }
-.tt-feature p { margin: 0; color: var(--ink-soft); font-size: .98rem; }
-.tt-feature .btn { flex: none; }
+/* ===== Tratamientos (rediseño) ===== */
+/* Intro con foto grande */
+.tt-hero { display: grid; grid-template-columns: 1fr 1fr; gap: 44px; align-items: center;
+  background: #eaf4e4; border-radius: 26px; padding: 50px; }
+.tt-hero__text .kicker { color: var(--green-dark); }
+.tt-hero__text h2 { color: var(--ink); font-size: clamp(1.8rem, 3.2vw, 2.6rem); margin: 14px 0 16px; line-height: 1.15; }
+.tt-hero__text p { color: var(--ink-soft); margin: 0 0 26px; max-width: 460px; }
+.tt-hero__img { border-radius: 20px; overflow: hidden; aspect-ratio: 4 / 3; box-shadow: var(--shadow); background: var(--bg-muted); }
+.tt-hero__img img { width: 100%; height: 100%; object-fit: cover; }
 
-.otras { border: 1px solid var(--border); border-radius: 22px; overflow: hidden; background: #fff; box-shadow: var(--shadow-sm); }
-.otras__item { border-top: 1px solid var(--border); }
-.otras__item:first-child { border-top: none; }
-.otras__item summary { cursor: pointer; list-style: none; padding: 22px 28px; display: flex; align-items: center; gap: 14px;
-  font-family: var(--font-display); font-weight: 600; font-size: 1.08rem; color: var(--ink); }
-.otras__item summary::-webkit-details-marker { display: none; }
-.otras__item summary::before { content: ""; width: 4px; height: 22px; border-radius: 4px; flex: none;
-  background: linear-gradient(var(--green), var(--cyan)); }
-.otras__item summary::after { content: "+"; margin-left: auto; font-size: 1.6rem; line-height: 1; color: var(--cyan); font-weight: 400; transition: transform .2s ease; }
-.otras__item[open] summary::after { transform: rotate(45deg); }
-.otras__item summary:hover { color: var(--blue); }
-.otras__body { padding: 0 28px 24px 46px; color: #44606a; }
-.otras__body p { margin: 0 0 12px; }
-.otras__body strong { color: var(--ink); font-family: var(--font-display); }
-.otras__body ul { margin: 8px 0 0; padding-left: 20px; }
-.otras__body li { margin-bottom: 5px; }
+/* Grid de tarjetas expandibles */
+.tt-grid__title { text-align: center; font-size: clamp(1.5rem, 2.6vw, 2rem); margin: 66px 0 34px; color: var(--ink); }
+.tt-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 22px; align-items: start; }
+.tt-card { background: #fff; border: 1px solid var(--border); border-radius: 18px; overflow: hidden;
+  box-shadow: var(--shadow-sm); transition: box-shadow .3s ease, transform .3s ease; }
+.tt-card:not([open]):hover { box-shadow: var(--shadow); transform: translateY(-4px); }
+.tt-card > summary { list-style: none; cursor: pointer; display: block; }
+.tt-card > summary::-webkit-details-marker { display: none; }
+.tt-card__img { display: block; aspect-ratio: 4 / 3; overflow: hidden; background: var(--bg-muted); }
+.tt-card__img img { width: 100%; height: 100%; object-fit: cover; transition: transform .5s ease; }
+.tt-card:hover .tt-card__img img { transform: scale(1.05); }
+.tt-card__body { display: block; padding: 18px 20px 20px; }
+.tt-card__body strong { display: block; font-family: var(--font-display); color: var(--ink); font-size: 1.08rem; margin-bottom: 6px; }
+.tt-card__desc { display: block; color: var(--ink-soft); font-size: .92rem; margin-bottom: 12px; }
+.tt-card__more { display: inline-block; color: var(--green-dark); font-family: var(--font-display); font-weight: 600; font-size: .9rem; }
+.tt-card[open] { grid-column: 1 / -1; box-shadow: var(--shadow); }
+.tt-card[open] .tt-card__img { display: none; }
+.tt-card[open] > summary { background: var(--bg-muted); }
+.tt-card[open] .tt-card__body { display: flex; align-items: baseline; gap: 12px; flex-wrap: wrap; padding: 22px 26px; }
+.tt-card[open] .tt-card__body strong { margin-bottom: 0; font-size: 1.25rem; color: var(--blue); }
+.tt-card[open] .tt-card__desc { margin-bottom: 0; }
+.tt-card[open] .tt-card__more { margin-left: auto; }
+.tt-card[open] .tt-card__more::after { content: " · cerrar"; }
 
+/* Panel de detalle */
+.tt-panel { padding: 26px 26px 30px; border-top: 1px solid var(--border); }
+.tt-panel__lead { color: #44606a; max-width: 720px; margin: 0 0 14px; }
+.tt-panel__list { list-style: none; margin: 0 0 22px; padding: 0; display: grid; gap: 8px; max-width: 720px; }
+.tt-panel__list li { position: relative; padding-left: 26px; color: #44606a; }
+.tt-panel__list li::before { content: "✓"; position: absolute; left: 0; color: var(--green-dark); font-weight: 700; }
+.tt-panel h4 { color: var(--ink); font-size: 1.15rem; margin: 26px 0 14px; }
+.tt-panel__benefits { list-style: none; margin: 8px 0 0; padding: 0; display: grid; gap: 8px; }
+.tt-panel__benefits li { position: relative; padding-left: 26px; color: #44606a; }
+.tt-panel__benefits li::before { content: "✓"; position: absolute; left: 0; color: var(--green-dark); font-weight: 700; }
+
+/* Sub-tarjetas (odontología estética) y sistemas (ortodoncia) */
+.tt-sub { list-style: none; margin: 22px 0 0; padding: 0; display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+.tt-sub li { margin: 0; background: #fff; border: 1px solid var(--border); border-radius: 14px; overflow: hidden; box-shadow: var(--shadow-sm); }
+.tt-sub__img { aspect-ratio: 4 / 3; overflow: hidden; background: var(--bg-muted); }
+.tt-sub__img img { width: 100%; height: 100%; object-fit: cover; }
+.tt-sub__txt { padding: 14px 16px 16px; }
+.tt-sub__txt strong { display: block; font-family: var(--font-display); color: var(--ink); font-size: 1rem; margin-bottom: 4px; }
+.tt-sub__txt span { color: var(--ink-soft); font-size: .86rem; }
+.tt-sub--systems .tt-sub__txt dl { margin: 8px 0 0; display: grid; gap: 4px; }
+.tt-sub--systems .tt-sub__txt dt { font-size: .72rem; letter-spacing: .06em; text-transform: uppercase; color: var(--green-dark); }
+.tt-sub--systems .tt-sub__txt dd { margin: 0 0 6px; color: #44606a; font-size: .9rem; }
+
+/* Bloques de tratamiento siempre visibles (blanqueamiento, sistemas ortodoncia) */
+.tt-block { margin-top: 62px; }
+
+/* Blanqueamiento — comparativa de 3 niveles */
+.tt-tiers-wrap { margin-top: 30px; text-align: center; }
+.tt-tiers-wrap > .kicker { color: var(--green-dark); }
+.tt-tiers-wrap h4 { color: var(--ink); font-size: 1.4rem; margin: 8px 0 24px; }
+.tt-tiers { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; text-align: left; }
+.tt-tier { border: 1px solid var(--border); border-radius: 16px; padding: 26px 24px; background: #fff; position: relative; }
+.tt-tier--popular { border-color: var(--green); box-shadow: 0 10px 26px rgba(156,203,59,.18); }
+.tt-tier__badge { position: absolute; top: -13px; left: 24px; background: var(--green); color: #fff; font-family: var(--font-display);
+  font-size: .68rem; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; padding: 5px 12px; border-radius: 999px; }
+.tt-tier > strong { display: block; font-family: var(--font-display); font-size: 1.2rem; color: var(--ink); margin-bottom: 16px; }
+.tt-tier dl { margin: 0; }
+.tt-tier dt { font-size: .72rem; letter-spacing: .06em; text-transform: uppercase; color: var(--ink-soft); margin-top: 12px; }
+.tt-tier dd { margin: 2px 0 0; color: var(--ink); font-weight: 500; }
+.tt-tiers-wrap .btn { margin-top: 26px; }
+
+@media (max-width: 980px) {
+  .tt-grid { grid-template-columns: repeat(2, 1fr); }
+  .tt-sub { grid-template-columns: repeat(2, 1fr); }
+}
 @media (max-width: 900px) {
   .casos__grid { grid-template-columns: repeat(3, 1fr); }
-  .tt-feature { grid-template-columns: 1fr; text-align: center; justify-items: center; }
+  .tt-hero { grid-template-columns: 1fr; padding: 34px; }
+  .tt-tiers { grid-template-columns: 1fr; }
 }
 @media (max-width: 680px) {
   .clinic-photos { grid-template-columns: 1fr; }
   .casos__grid { grid-template-columns: repeat(2, 1fr); }
-  .otras__body { padding-left: 28px; }
+  .tt-grid { grid-template-columns: 1fr; }
+  .tt-sub { grid-template-columns: 1fr 1fr; }
+  .tt-card[open] .tt-card__more { margin-left: 0; }
 }
