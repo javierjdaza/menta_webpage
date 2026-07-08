@@ -479,7 +479,7 @@ body[data-theme="blue"] .theme-switch__dot { background: var(--blue); }
 .clinic-photo__img img { width: 100%; height: 100%; object-fit: cover; transition: transform .5s ease; }
 .clinic-photo:hover .clinic-photo__img img { transform: scale(1.05); }
 .clinic-photo__title { color: var(--cyan); font-size: 1.15rem; margin: 16px 0 8px; }
-.clinic-photo p { color: var(--ink-soft); font-size: .94rem; margin: 0; }
+.clinic-photo p { color: #1a1a1a; font-weight: 400; font-size: .95rem; margin: 0; }
 
 /* Teaser especialidades sin arte (una sola columna) */
 .svc-cta--solo { grid-template-columns: 1fr; text-align: center; }
