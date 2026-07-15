@@ -653,3 +653,38 @@ body[data-theme="blue"] .theme-switch__dot { background: var(--blue); }
 .svc__title, .tt-grid__title, .casos__title, .otras__head h3, .tt-tiers-wrap h4 { letter-spacing: -0.025em; }
 /* números/acentos de marca con degradado se mantienen nítidos */
 .member__info strong, .doctor figcaption strong, .tt-card__body strong { letter-spacing: -0.02em; }
+
+/* ============================================================
+   9. Expandables de blanqueamiento / sistemas ortodoncia
+   ============================================================ */
+
+/* Grid: altura uniforme en todas las cards */
+.tt-grid { align-items: stretch; }
+.tt-card { display: flex; flex-direction: column; }
+
+/* tier como <details>: ocultar marcador y estilar "Ver más" */
+.tt-tier { cursor: default; }
+.tt-tier > summary { list-style: none; cursor: pointer; }
+.tt-tier > summary::-webkit-details-marker { display: none; }
+.tt-tier__more { display: inline-block; margin-top: 14px; font-family: var(--font-display); font-weight: 600; font-size: .85rem; color: var(--green-dark); }
+.tt-tier[open] .tt-tier__more::after { content: " · cerrar"; }
+.tt-tier__detail { margin-top: 16px; padding-top: 16px; border-top: 1px solid var(--border); font-size: .93rem; color: #44606a; }
+.tt-tier__detail p { margin: 0 0 10px; }
+.tt-tier__detail ul { margin: 4px 0 10px; padding-left: 18px; }
+.tt-tier__detail li { margin-bottom: 4px; }
+/* badge posición en <details> */
+.tt-tier--popular .tt-tier__badge { display: block; width: fit-content; margin-bottom: 12px; }
+
+/* tt-more: "Ver más" inline dentro de las cards de sistemas ortodoncia */
+.tt-more { margin-top: 14px; }
+.tt-more > summary { list-style: none; cursor: pointer; display: inline-flex; align-items: center; gap: 4px;
+  font-family: var(--font-display); font-weight: 600; font-size: .85rem; color: var(--green-dark); }
+.tt-more > summary::-webkit-details-marker { display: none; }
+.tt-more[open] > summary::after { content: " · cerrar"; }
+.tt-more__body { margin-top: 12px; padding-top: 12px; border-top: 1px solid var(--border); font-size: .9rem; color: #44606a; }
+.tt-more__body p { margin: 0 0 10px; }
+.tt-more__body p:last-child { margin-bottom: 0; }
+
+/* h5/h6 dentro de los paneles de tratamiento */
+.tt-panel h5 { font-size: 1.05rem; color: var(--blue); margin: 22px 0 8px; letter-spacing: -0.015em; }
+.tt-panel h6 { font-size: .95rem; color: var(--ink); font-weight: 600; margin: 14px 0 6px; letter-spacing: -0.01em; }
